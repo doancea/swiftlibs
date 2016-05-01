@@ -23,33 +23,35 @@ public class CalendarDate: NSObject {
     public func getDateString() -> String {
         return self._stringValue
     }
-    
+
     public func getNSDateValue() -> NSDate {
         return self._nsDateValue
     }
-    
+
     public func daysIntervalSince1970() -> NSNumber {
         return self._daysSince1970
     }
-    
+
     private static func calculateStringValue(day: Int, month: Int, year: Int) -> String {
         let paddedDayString = String(format: "%02d", day)
         let paddedMonthString = String(format: "%02d", month)
         return "\(year)-\(paddedMonthString)-\(paddedDayString)"
     }
-    
+
     private static func calculateNSDateValue(day: Int, month: Int, year: Int) -> NSDate {
         let dateString = CalendarDate.calculateStringValue(day, month: month, year: year)
         let formatter = NSDateFormatter()
         formatter.dateFormat = "yyyy-MM-dd"
+        let date = formatter.dateFromString(dateString)!
+        let calendarDayTimeInterval: Double = date.timeIntervalSince1970 + Double(NSTimeZone.systemTimeZone().secondsFromGMT) + (12 * 60 * 60)
         
-        return formatter.dateFromString(dateString)!
+        return NSDate(timeIntervalSince1970: calendarDayTimeInterval)
     }
     
-    private static func calculateDaysSince1970(date: NSDate) ->NSNumber {
+    private static func calculateDaysSince1970(date: NSDate) -> NSNumber {
         let secondsPerDay: Int32 = 24 * 60 * 60
         
-        let timeInt = Int32(date.timeIntervalSince1970)
+        let timeInt = Int32(date.timeIntervalSince1970) + NSTimeZone.systemTimeZone().secondsFromGMT
         
         return NSNumber(int: (timeInt / secondsPerDay))
     }

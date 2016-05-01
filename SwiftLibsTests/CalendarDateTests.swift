@@ -34,4 +34,16 @@ class CalendarDateTests: XCTestCase {
         
         XCTAssertEqual(subject.getNSDateValue(), expectedDate)
     }
+
+    func testConstructingACalendarDateWithADayMonthAndYearCreatesACalendarDateWithTheCorrectDateValueAndTheTimeIsNoonForTheCurrentSystemTimeZone() {
+        let subject = CalendarDate(day: 1, month: 5, year: 2016)
+
+        let dateString = "2016-05-01"
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+
+        let timeValue: NSTimeInterval = formatter.dateFromString(dateString)!.timeIntervalSince1970 + Double(NSTimeZone.systemTimeZone().secondsFromGMT) + (60 * 60 * 12)
+        let expectedDateWithNoonTime = NSDate(timeIntervalSince1970: timeValue)
+        XCTAssertEqual(subject.getNSDateValue(), expectedDateWithNoonTime)
+    }
 }
