@@ -3,21 +3,30 @@ import Foundation
 
 public class CalendarDate: NSObject {
     
-    private let _day: Int
-    private let _month: Int
-    private let _year: Int
+    private static let SECONDS_PER_DAY : Int32 = 60 * 60 * 24
+    private static let MIDDAY_SECONDS_INTERVAL: Int32 = 60 * 60 * 12
+    
     private let _stringValue: String
     private let _nsDateValue: NSDate
-    private let _daysSince1970: NSNumber
+    private let _daysSince1970: NSInteger
 
     public init(day: Int, month: Int, year: Int) {
-        self._day = day
-        self._month = month
-        self._year = year
-        
         self._stringValue = CalendarDate.calculateStringValue(day, month: month, year: year)
         self._nsDateValue = CalendarDate.calculateNSDateValue(day, month: month, year: year)
         self._daysSince1970 = CalendarDate.calculateDaysSince1970(self._nsDateValue)
+    }
+    
+    public init(date: NSDate) {
+        self._daysSince1970 = CalendarDate.calculateDaysSince1970(date)
+        self._nsDateValue = CalendarDate.calculateNSDateValue(self._daysSince1970)
+
+        self._stringValue = CalendarDate.calculateStringValue(_nsDateValue)
+    }
+    
+    public init(daysInterval: NSInteger) {
+        self._daysSince1970 = daysInterval
+        self._nsDateValue = CalendarDate.calculateNSDateValue(daysInterval)
+        self._stringValue = CalendarDate.calculateStringValue(_nsDateValue)
     }
     
     public func getDateString() -> String {
@@ -28,7 +37,7 @@ public class CalendarDate: NSObject {
         return self._nsDateValue
     }
 
-    public func daysIntervalSince1970() -> NSNumber {
+    public func daysIntervalSince1970() -> NSInteger {
         return self._daysSince1970
     }
 
@@ -38,6 +47,13 @@ public class CalendarDate: NSObject {
         return "\(year)-\(paddedMonthString)-\(paddedDayString)"
     }
 
+    private static func calculateStringValue(date: NSDate) -> String {
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        
+        return formatter.stringFromDate(date)
+    }
+    
     private static func calculateNSDateValue(day: Int, month: Int, year: Int) -> NSDate {
         let dateString = CalendarDate.calculateStringValue(day, month: month, year: year)
         let formatter = NSDateFormatter()
@@ -48,11 +64,22 @@ public class CalendarDate: NSObject {
         return NSDate(timeIntervalSince1970: calendarDayTimeInterval)
     }
     
-    private static func calculateDaysSince1970(date: NSDate) -> NSNumber {
-        let secondsPerDay: Int32 = 24 * 60 * 60
+    private static func calculateNSDateValue(daysInterval: NSInteger) -> NSDate {
+        let secondsInterval = Double(daysInterval) * Double(CalendarDate.SECONDS_PER_DAY) + Double(CalendarDate.MIDDAY_SECONDS_INTERVAL)
+        
+        let date  = NSDate(timeIntervalSince1970: secondsInterval)
+        return date
+    }
+    
+    private static func calculateNSDateValue(date: NSDate) -> NSDate {
+        let daysInterval = CalendarDate.calculateDaysSince1970(date)
+        
+        return CalendarDate.calculateNSDateValue(daysInterval)
+    }
+    
+    private static func calculateDaysSince1970(date: NSDate) -> NSInteger {
         
         let timeInt = Int32(date.timeIntervalSince1970) + NSTimeZone.systemTimeZone().secondsFromGMT
-        
-        return NSNumber(int: (timeInt / secondsPerDay))
+        return NSInteger((timeInt / CalendarDate.SECONDS_PER_DAY))
     }
 }
