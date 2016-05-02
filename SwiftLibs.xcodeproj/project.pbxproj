@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6CFFDDAB1CD2321800228824 /* CalendarDateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFFDDAA1CD2321800228824 /* CalendarDateTests.swift */; };
+		6CFFDDAD1CD2322B00228824 /* CalendarDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFFDDAC1CD2322B00228824 /* CalendarDate.swift */; };
 		D56150251C3ACE5A009EE343 /* SwiftLibs.h in Headers */ = {isa = PBXBuildFile; fileRef = D56150241C3ACE5A009EE343 /* SwiftLibs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D561502C1C3ACE5A009EE343 /* SwiftLibs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56150211C3ACE5A009EE343 /* SwiftLibs.framework */; };
 		D56150311C3ACE5A009EE343 /* WebRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56150301C3ACE5A009EE343 /* WebRequestTests.swift */; };
@@ -30,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6CFFDDAA1CD2321800228824 /* CalendarDateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDateTests.swift; sourceTree = "<group>"; };
+		6CFFDDAC1CD2322B00228824 /* CalendarDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDate.swift; sourceTree = "<group>"; };
 		D56150211C3ACE5A009EE343 /* SwiftLibs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftLibs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56150241C3ACE5A009EE343 /* SwiftLibs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftLibs.h; sourceTree = "<group>"; };
 		D56150261C3ACE5A009EE343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 				D56150241C3ACE5A009EE343 /* SwiftLibs.h */,
 				D56150261C3ACE5A009EE343 /* Info.plist */,
 				D561503C1C3ACF21009EE343 /* Util.swift */,
+				6CFFDDAC1CD2322B00228824 /* CalendarDate.swift */,
 				D561503D1C3ACF21009EE343 /* WebRequest.swift */,
 				D56150461C3AD88E009EE343 /* Test */,
 			);
@@ -122,6 +127,7 @@
 				D56150321C3ACE5A009EE343 /* Info.plist */,
 				D56150441C3AD69F009EE343 /* MockSessionDelegate.swift */,
 				D56150301C3ACE5A009EE343 /* WebRequestTests.swift */,
+				6CFFDDAA1CD2321800228824 /* CalendarDateTests.swift */,
 			);
 			path = SwiftLibsTests;
 			sourceTree = "<group>";
@@ -368,6 +374,7 @@
 			files = (
 				D561504A1C3AD8A1009EE343 /* MockWebRequest.swift in Sources */,
 				D56150401C3ACF21009EE343 /* WebRequest.swift in Sources */,
+				6CFFDDAD1CD2322B00228824 /* CalendarDate.swift in Sources */,
 				D56150481C3AD89D009EE343 /* Mocker.swift in Sources */,
 				D561503F1C3ACF21009EE343 /* Util.swift in Sources */,
 			);
@@ -379,6 +386,7 @@
 			files = (
 				D56150311C3ACE5A009EE343 /* WebRequestTests.swift in Sources */,
 				D56150451C3AD69F009EE343 /* MockSessionDelegate.swift in Sources */,
+				6CFFDDAB1CD2321800228824 /* CalendarDateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
