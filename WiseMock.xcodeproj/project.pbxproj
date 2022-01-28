@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D56150251C3ACE5A009EE343 /* SwiftLibs.h in Headers */ = {isa = PBXBuildFile; fileRef = D56150241C3ACE5A009EE343 /* SwiftLibs.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D561502C1C3ACE5A009EE343 /* SwiftLibs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56150211C3ACE5A009EE343 /* SwiftLibs.framework */; };
+		D561502C1C3ACE5A009EE343 /* WiseMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56150211C3ACE5A009EE343 /* WiseMock.framework */; };
 		D56150311C3ACE5A009EE343 /* WebRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56150301C3ACE5A009EE343 /* WebRequestTests.swift */; };
 		D561503F1C3ACF21009EE343 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D561503C1C3ACF21009EE343 /* Util.swift */; };
 		D56150401C3ACF21009EE343 /* WebRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D561503D1C3ACF21009EE343 /* WebRequest.swift */; };
@@ -30,10 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D56150211C3ACE5A009EE343 /* SwiftLibs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftLibs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D56150211C3ACE5A009EE343 /* WiseMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WiseMock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56150241C3ACE5A009EE343 /* SwiftLibs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftLibs.h; sourceTree = "<group>"; };
 		D56150261C3ACE5A009EE343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D561502B1C3ACE5A009EE343 /* SwiftLibsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLibsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D561502B1C3ACE5A009EE343 /* WiseMockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiseMockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56150301C3ACE5A009EE343 /* WebRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRequestTests.swift; sourceTree = "<group>"; };
 		D56150321C3ACE5A009EE343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D561503C1C3ACF21009EE343 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
@@ -41,10 +41,10 @@
 		D56150441C3AD69F009EE343 /* MockSessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSessionDelegate.swift; sourceTree = "<group>"; };
 		D56150471C3AD89D009EE343 /* Mocker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mocker.swift; path = Test/Mocker.swift; sourceTree = "<group>"; };
 		D56150491C3AD8A1009EE343 /* MockWebRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockWebRequest.swift; path = Test/MockWebRequest.swift; sourceTree = "<group>"; };
-		D58F122E1C49409F006F4CA1 /* SwiftLibsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftLibsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D58F122E1C49409F006F4CA1 /* WiseMockFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WiseMockFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58F12301C49409F006F4CA1 /* SwiftLibsFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftLibsFramework.h; sourceTree = "<group>"; };
 		D58F12321C49409F006F4CA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D58F126B1C494AE8006F4CA1 /* SwiftLibsFrameworkProduction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftLibsFrameworkProduction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D58F126B1C494AE8006F4CA1 /* WiseMockFrameworkProduction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WiseMockFrameworkProduction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D58F126D1C494AE8006F4CA1 /* SwiftLibsFrameworkProduction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftLibsFrameworkProduction.h; sourceTree = "<group>"; };
 		D58F126F1C494AE8006F4CA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D561502C1C3ACE5A009EE343 /* SwiftLibs.framework in Frameworks */,
+				D561502C1C3ACE5A009EE343 /* WiseMock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,10 +96,10 @@
 		D56150221C3ACE5A009EE343 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D56150211C3ACE5A009EE343 /* SwiftLibs.framework */,
-				D561502B1C3ACE5A009EE343 /* SwiftLibsTests.xctest */,
-				D58F122E1C49409F006F4CA1 /* SwiftLibsFramework.framework */,
-				D58F126B1C494AE8006F4CA1 /* SwiftLibsFrameworkProduction.framework */,
+				D56150211C3ACE5A009EE343 /* WiseMock.framework */,
+				D561502B1C3ACE5A009EE343 /* WiseMockTests.xctest */,
+				D58F122E1C49409F006F4CA1 /* WiseMockFramework.framework */,
+				D58F126B1C494AE8006F4CA1 /* WiseMockFrameworkProduction.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,9 +183,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D56150201C3ACE5A009EE343 /* SwiftLibs */ = {
+		D56150201C3ACE5A009EE343 /* WiseMock */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D56150351C3ACE5A009EE343 /* Build configuration list for PBXNativeTarget "SwiftLibs" */;
+			buildConfigurationList = D56150351C3ACE5A009EE343 /* Build configuration list for PBXNativeTarget "WiseMock" */;
 			buildPhases = (
 				D561501C1C3ACE5A009EE343 /* Sources */,
 				D561501D1C3ACE5A009EE343 /* Frameworks */,
@@ -196,14 +196,14 @@
 			);
 			dependencies = (
 			);
-			name = SwiftLibs;
+			name = WiseMock;
 			productName = SwiftLibs;
-			productReference = D56150211C3ACE5A009EE343 /* SwiftLibs.framework */;
+			productReference = D56150211C3ACE5A009EE343 /* WiseMock.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D561502A1C3ACE5A009EE343 /* SwiftLibsTests */ = {
+		D561502A1C3ACE5A009EE343 /* WiseMockTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D56150381C3ACE5A009EE343 /* Build configuration list for PBXNativeTarget "SwiftLibsTests" */;
+			buildConfigurationList = D56150381C3ACE5A009EE343 /* Build configuration list for PBXNativeTarget "WiseMockTests" */;
 			buildPhases = (
 				D56150271C3ACE5A009EE343 /* Sources */,
 				D56150281C3ACE5A009EE343 /* Frameworks */,
@@ -214,14 +214,14 @@
 			dependencies = (
 				D561502E1C3ACE5A009EE343 /* PBXTargetDependency */,
 			);
-			name = SwiftLibsTests;
+			name = WiseMockTests;
 			productName = SwiftLibsTests;
-			productReference = D561502B1C3ACE5A009EE343 /* SwiftLibsTests.xctest */;
+			productReference = D561502B1C3ACE5A009EE343 /* WiseMockTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D58F122D1C49409F006F4CA1 /* SwiftLibsFramework */ = {
+		D58F122D1C49409F006F4CA1 /* WiseMockFramework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D58F12431C49409F006F4CA1 /* Build configuration list for PBXNativeTarget "SwiftLibsFramework" */;
+			buildConfigurationList = D58F12431C49409F006F4CA1 /* Build configuration list for PBXNativeTarget "WiseMockFramework" */;
 			buildPhases = (
 				D58F12291C49409F006F4CA1 /* Sources */,
 				D58F122A1C49409F006F4CA1 /* Frameworks */,
@@ -233,14 +233,14 @@
 			);
 			dependencies = (
 			);
-			name = SwiftLibsFramework;
+			name = WiseMockFramework;
 			productName = SwiftLibsFramework;
-			productReference = D58F122E1C49409F006F4CA1 /* SwiftLibsFramework.framework */;
+			productReference = D58F122E1C49409F006F4CA1 /* WiseMockFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D58F126A1C494AE8006F4CA1 /* SwiftLibsFrameworkProduction */ = {
+		D58F126A1C494AE8006F4CA1 /* WiseMockFrameworkProduction */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D58F127C1C494AE8006F4CA1 /* Build configuration list for PBXNativeTarget "SwiftLibsFrameworkProduction" */;
+			buildConfigurationList = D58F127C1C494AE8006F4CA1 /* Build configuration list for PBXNativeTarget "WiseMockFrameworkProduction" */;
 			buildPhases = (
 				D58F12661C494AE8006F4CA1 /* Sources */,
 				D58F12671C494AE8006F4CA1 /* Frameworks */,
@@ -252,9 +252,9 @@
 			);
 			dependencies = (
 			);
-			name = SwiftLibsFrameworkProduction;
+			name = WiseMockFrameworkProduction;
 			productName = SwiftLibsFrameworkProduction;
-			productReference = D58F126B1C494AE8006F4CA1 /* SwiftLibsFrameworkProduction.framework */;
+			productReference = D58F126B1C494AE8006F4CA1 /* WiseMockFrameworkProduction.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -281,11 +281,12 @@
 					};
 				};
 			};
-			buildConfigurationList = D561501B1C3ACE5A009EE343 /* Build configuration list for PBXProject "SwiftLibs" */;
+			buildConfigurationList = D561501B1C3ACE5A009EE343 /* Build configuration list for PBXProject "WiseMock" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = D56150171C3ACE5A009EE343;
@@ -293,10 +294,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D56150201C3ACE5A009EE343 /* SwiftLibs */,
-				D561502A1C3ACE5A009EE343 /* SwiftLibsTests */,
-				D58F122D1C49409F006F4CA1 /* SwiftLibsFramework */,
-				D58F126A1C494AE8006F4CA1 /* SwiftLibsFrameworkProduction */,
+				D56150201C3ACE5A009EE343 /* WiseMock */,
+				D561502A1C3ACE5A009EE343 /* WiseMockTests */,
+				D58F122D1C49409F006F4CA1 /* WiseMockFramework */,
+				D58F126A1C494AE8006F4CA1 /* WiseMockFrameworkProduction */,
 			);
 		};
 /* End PBXProject section */
@@ -401,7 +402,7 @@
 /* Begin PBXTargetDependency section */
 		D561502E1C3ACE5A009EE343 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D56150201C3ACE5A009EE343 /* SwiftLibs */;
+			target = D56150201C3ACE5A009EE343 /* WiseMock */;
 			targetProxy = D561502D1C3ACE5A009EE343 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -620,7 +621,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D561501B1C3ACE5A009EE343 /* Build configuration list for PBXProject "SwiftLibs" */ = {
+		D561501B1C3ACE5A009EE343 /* Build configuration list for PBXProject "WiseMock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D56150331C3ACE5A009EE343 /* Debug */,
@@ -629,7 +630,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D56150351C3ACE5A009EE343 /* Build configuration list for PBXNativeTarget "SwiftLibs" */ = {
+		D56150351C3ACE5A009EE343 /* Build configuration list for PBXNativeTarget "WiseMock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D56150361C3ACE5A009EE343 /* Debug */,
@@ -638,7 +639,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D56150381C3ACE5A009EE343 /* Build configuration list for PBXNativeTarget "SwiftLibsTests" */ = {
+		D56150381C3ACE5A009EE343 /* Build configuration list for PBXNativeTarget "WiseMockTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D56150391C3ACE5A009EE343 /* Debug */,
@@ -647,7 +648,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D58F12431C49409F006F4CA1 /* Build configuration list for PBXNativeTarget "SwiftLibsFramework" */ = {
+		D58F12431C49409F006F4CA1 /* Build configuration list for PBXNativeTarget "WiseMockFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D58F123F1C49409F006F4CA1 /* Debug */,
@@ -656,7 +657,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D58F127C1C494AE8006F4CA1 /* Build configuration list for PBXNativeTarget "SwiftLibsFrameworkProduction" */ = {
+		D58F127C1C494AE8006F4CA1 /* Build configuration list for PBXNativeTarget "WiseMockFrameworkProduction" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D58F127D1C494AE8006F4CA1 /* Debug */,
