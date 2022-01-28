@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB5021EA27A434A10076C2BE /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5021E827A434A10076C2BE /* Mockable.swift */; };
+		BB5021EB27A434A10076C2BE /* MockMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5021E927A434A10076C2BE /* MockMatchers.swift */; };
 		D56150251C3ACE5A009EE343 /* SwiftLibs.h in Headers */ = {isa = PBXBuildFile; fileRef = D56150241C3ACE5A009EE343 /* SwiftLibs.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D561502C1C3ACE5A009EE343 /* WiseMockFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56150211C3ACE5A009EE343 /* WiseMockFramework.framework */; };
 		D56150311C3ACE5A009EE343 /* WebRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56150301C3ACE5A009EE343 /* WebRequestTests.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB5021E827A434A10076C2BE /* Mockable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mockable.swift; path = Test/Mockable.swift; sourceTree = "<group>"; };
+		BB5021E927A434A10076C2BE /* MockMatchers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockMatchers.swift; path = Test/MockMatchers.swift; sourceTree = "<group>"; };
 		D56150211C3ACE5A009EE343 /* WiseMockFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WiseMockFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56150241C3ACE5A009EE343 /* SwiftLibs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftLibs.h; sourceTree = "<group>"; };
 		D56150261C3ACE5A009EE343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 		D56150461C3AD88E009EE343 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				BB5021E827A434A10076C2BE /* Mockable.swift */,
+				BB5021E927A434A10076C2BE /* MockMatchers.swift */,
 				D56150471C3AD89D009EE343 /* Mocker.swift */,
 				D56150491C3AD8A1009EE343 /* MockWebRequest.swift */,
 			);
@@ -244,7 +250,9 @@
 			files = (
 				D561504A1C3AD8A1009EE343 /* MockWebRequest.swift in Sources */,
 				D56150401C3ACF21009EE343 /* WebRequest.swift in Sources */,
+				BB5021EA27A434A10076C2BE /* Mockable.swift in Sources */,
 				D56150481C3AD89D009EE343 /* Mocker.swift in Sources */,
+				BB5021EB27A434A10076C2BE /* MockMatchers.swift in Sources */,
 				D561503F1C3ACF21009EE343 /* Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
