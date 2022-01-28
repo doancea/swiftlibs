@@ -1,7 +1,7 @@
 import Foundation
 import Nimble
 
-//Invocation Count
+///Invocation Count
 public func invoke<T: Mockable>(_ name: T.MockedMethod, times: Int = 1) -> Predicate<T> {
     
     return Predicate<T>.define { actualExpression in
@@ -22,7 +22,7 @@ public func invoke<T: Mockable>(_ name: T.MockedMethod, times: Int = 1) -> Predi
 
 }
 
-//Equality
+///Equality
 public func invoke<T: Mockable, E: Equatable>(_ name: T.MockedMethod, atInvocation invocationIndex: Int = 0, withParameter parameter: E?, at parameterIndex: Int = 0) -> Predicate<T> {
     return Predicate<T>.define { actualExpression in
         var expectationMessage: ExpectationMessage!
@@ -43,7 +43,7 @@ public func invoke<T: Mockable, E: Equatable>(_ name: T.MockedMethod, atInvocati
 
 }
 
-//Identity
+///Identity
 public func invoke<T: Mockable, E: AnyObject>(_ name: T.MockedMethod, atInvocation invocationIndex: Int = 0, withIdenticalParameter parameter: E?, at parameterIndex: Int = 0) -> Predicate<T> {
     return Predicate<T>.define { actualExpression in
         var expectationMessage: ExpectationMessage!
