@@ -1,19 +1,24 @@
 import Foundation
 import Nimble
 
-/// Invocation Count
-public func invoke<T: Mockable>(_ name: T.MockedMethod, times: Int = 1) -> MatcherFunc<T> {
-    return MatcherFunc { actualExpression, failureMessage in
-
-        failureMessage.postfixMessage = "invoke \(name) \(times) times"
-
+public func invoke<T: Mockable>(_ name: T.MockedMethod, times: Int = 1) -> Predicate<T> {
+    
+    return Predicate<T>.define { actualExpression in
+        var expectationMessage: ExpectationMessage!
+        var status: PredicateStatus!
+        
         if let mockable = try? actualExpression.evaluate() {
-            failureMessage.actualValue = "\(mockable.invocationCount(for: name) ?? 0) invocations"
-            return mockable.invocationCount(for: name) == times
+            let failureExpectationMessage = "invoke \(name) \(times) times"
+            let actualMessage = "\(mockable.invocationCount(for: name)) invocations"
+            status = PredicateStatus(bool: mockable.invocationCount(for: name) == times)
+            expectationMessage = .expectedCustomValueTo(failureExpectationMessage, actual: actualMessage)
+        } else {
+            status = .fail
+            expectationMessage = .fail("something else happened")
         }
-
-        return false
+        return PredicateResult(status: status, message: expectationMessage)
     }
+
 }
 
 /// Equatable
