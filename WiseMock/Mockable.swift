@@ -13,9 +13,7 @@ public protocol Mockable {
 }
 
 public extension Mockable {
-    // Set to "Any?" to avoid Swift 3 compiler warnings about implicit casting.
-    // There is a bug where the warning will not display in a source file at
-    // https://bugs.swift.org/browse/SR-2921
+    
     func record(invocation name: String, with parameters: Any?...) {
         mocker.recordInvocation(name, paramList: parameters as [Any?])
     }

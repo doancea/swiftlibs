@@ -9,14 +9,10 @@
 /* Begin PBXBuildFile section */
 		BB5021EA27A434A10076C2BE /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5021E827A434A10076C2BE /* Mockable.swift */; };
 		BB5021EB27A434A10076C2BE /* MockMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5021E927A434A10076C2BE /* MockMatchers.swift */; };
-		D56150251C3ACE5A009EE343 /* SwiftLibs.h in Headers */ = {isa = PBXBuildFile; fileRef = D56150241C3ACE5A009EE343 /* SwiftLibs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB5021EE27A435020076C2BE /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = BB5021ED27A435020076C2BE /* Nimble */; };
+		D56150251C3ACE5A009EE343 /* WiseMock.h in Headers */ = {isa = PBXBuildFile; fileRef = D56150241C3ACE5A009EE343 /* WiseMock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D561502C1C3ACE5A009EE343 /* WiseMockFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56150211C3ACE5A009EE343 /* WiseMockFramework.framework */; };
-		D56150311C3ACE5A009EE343 /* WebRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56150301C3ACE5A009EE343 /* WebRequestTests.swift */; };
-		D561503F1C3ACF21009EE343 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D561503C1C3ACF21009EE343 /* Util.swift */; };
-		D56150401C3ACF21009EE343 /* WebRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D561503D1C3ACF21009EE343 /* WebRequest.swift */; };
-		D56150451C3AD69F009EE343 /* MockSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56150441C3AD69F009EE343 /* MockSessionDelegate.swift */; };
 		D56150481C3AD89D009EE343 /* Mocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56150471C3AD89D009EE343 /* Mocker.swift */; };
-		D561504A1C3AD8A1009EE343 /* MockWebRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56150491C3AD8A1009EE343 /* MockWebRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,23 +26,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BB5021E827A434A10076C2BE /* Mockable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mockable.swift; path = Test/Mockable.swift; sourceTree = "<group>"; };
-		BB5021E927A434A10076C2BE /* MockMatchers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockMatchers.swift; path = Test/MockMatchers.swift; sourceTree = "<group>"; };
+		BB5021E827A434A10076C2BE /* Mockable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mockable.swift; sourceTree = "<group>"; };
+		BB5021E927A434A10076C2BE /* MockMatchers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockMatchers.swift; sourceTree = "<group>"; };
 		D56150211C3ACE5A009EE343 /* WiseMockFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WiseMockFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D56150241C3ACE5A009EE343 /* SwiftLibs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftLibs.h; sourceTree = "<group>"; };
+		D56150241C3ACE5A009EE343 /* WiseMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WiseMock.h; sourceTree = "<group>"; };
 		D56150261C3ACE5A009EE343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D561502B1C3ACE5A009EE343 /* WiseMockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiseMockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D56150301C3ACE5A009EE343 /* WebRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRequestTests.swift; sourceTree = "<group>"; };
-		D56150321C3ACE5A009EE343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D561503C1C3ACF21009EE343 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
-		D561503D1C3ACF21009EE343 /* WebRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebRequest.swift; sourceTree = "<group>"; };
-		D56150441C3AD69F009EE343 /* MockSessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSessionDelegate.swift; sourceTree = "<group>"; };
-		D56150471C3AD89D009EE343 /* Mocker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mocker.swift; path = Test/Mocker.swift; sourceTree = "<group>"; };
-		D56150491C3AD8A1009EE343 /* MockWebRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockWebRequest.swift; path = Test/MockWebRequest.swift; sourceTree = "<group>"; };
-		D58F12301C49409F006F4CA1 /* SwiftLibsFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftLibsFramework.h; sourceTree = "<group>"; };
-		D58F12321C49409F006F4CA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D58F126D1C494AE8006F4CA1 /* SwiftLibsFrameworkProduction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftLibsFrameworkProduction.h; sourceTree = "<group>"; };
-		D58F126F1C494AE8006F4CA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D56150471C3AD89D009EE343 /* Mocker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mocker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB5021EE27A435020076C2BE /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,10 +58,7 @@
 		D56150171C3ACE5A009EE343 = {
 			isa = PBXGroup;
 			children = (
-				D56150231C3ACE5A009EE343 /* SwiftLibs */,
-				D561502F1C3ACE5A009EE343 /* SwiftLibsTests */,
-				D58F122F1C49409F006F4CA1 /* SwiftLibsFramework */,
-				D58F126C1C494AE8006F4CA1 /* SwiftLibsFrameworkProduction */,
+				D56150231C3ACE5A009EE343 /* WiseMock */,
 				D56150221C3ACE5A009EE343 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,55 +72,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D56150231C3ACE5A009EE343 /* SwiftLibs */ = {
-			isa = PBXGroup;
-			children = (
-				D56150241C3ACE5A009EE343 /* SwiftLibs.h */,
-				D56150261C3ACE5A009EE343 /* Info.plist */,
-				D561503C1C3ACF21009EE343 /* Util.swift */,
-				D561503D1C3ACF21009EE343 /* WebRequest.swift */,
-				D56150461C3AD88E009EE343 /* Test */,
-			);
-			path = SwiftLibs;
-			sourceTree = "<group>";
-		};
-		D561502F1C3ACE5A009EE343 /* SwiftLibsTests */ = {
-			isa = PBXGroup;
-			children = (
-				D56150321C3ACE5A009EE343 /* Info.plist */,
-				D56150441C3AD69F009EE343 /* MockSessionDelegate.swift */,
-				D56150301C3ACE5A009EE343 /* WebRequestTests.swift */,
-			);
-			path = SwiftLibsTests;
-			sourceTree = "<group>";
-		};
-		D56150461C3AD88E009EE343 /* Test */ = {
+		D56150231C3ACE5A009EE343 /* WiseMock */ = {
 			isa = PBXGroup;
 			children = (
 				BB5021E827A434A10076C2BE /* Mockable.swift */,
 				BB5021E927A434A10076C2BE /* MockMatchers.swift */,
 				D56150471C3AD89D009EE343 /* Mocker.swift */,
-				D56150491C3AD8A1009EE343 /* MockWebRequest.swift */,
+				D56150241C3ACE5A009EE343 /* WiseMock.h */,
+				D56150261C3ACE5A009EE343 /* Info.plist */,
 			);
-			name = Test;
-			sourceTree = "<group>";
-		};
-		D58F122F1C49409F006F4CA1 /* SwiftLibsFramework */ = {
-			isa = PBXGroup;
-			children = (
-				D58F12301C49409F006F4CA1 /* SwiftLibsFramework.h */,
-				D58F12321C49409F006F4CA1 /* Info.plist */,
-			);
-			path = SwiftLibsFramework;
-			sourceTree = "<group>";
-		};
-		D58F126C1C494AE8006F4CA1 /* SwiftLibsFrameworkProduction */ = {
-			isa = PBXGroup;
-			children = (
-				D58F126D1C494AE8006F4CA1 /* SwiftLibsFrameworkProduction.h */,
-				D58F126F1C494AE8006F4CA1 /* Info.plist */,
-			);
-			path = SwiftLibsFrameworkProduction;
+			path = WiseMock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +91,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D56150251C3ACE5A009EE343 /* SwiftLibs.h in Headers */,
+				D56150251C3ACE5A009EE343 /* WiseMock.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +112,9 @@
 			dependencies = (
 			);
 			name = WiseMockFramework;
+			packageProductDependencies = (
+				BB5021ED27A435020076C2BE /* Nimble */,
+			);
 			productName = SwiftLibs;
 			productReference = D56150211C3ACE5A009EE343 /* WiseMockFramework.framework */;
 			productType = "com.apple.product-type.framework";
@@ -216,6 +164,9 @@
 				en,
 			);
 			mainGroup = D56150171C3ACE5A009EE343;
+			packageReferences = (
+				BB5021EC27A435020076C2BE /* XCRemoteSwiftPackageReference "Nimble" */,
+			);
 			productRefGroup = D56150221C3ACE5A009EE343 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -248,12 +199,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D561504A1C3AD8A1009EE343 /* MockWebRequest.swift in Sources */,
-				D56150401C3ACF21009EE343 /* WebRequest.swift in Sources */,
 				BB5021EA27A434A10076C2BE /* Mockable.swift in Sources */,
 				D56150481C3AD89D009EE343 /* Mocker.swift in Sources */,
 				BB5021EB27A434A10076C2BE /* MockMatchers.swift in Sources */,
-				D561503F1C3ACF21009EE343 /* Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,8 +209,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D56150311C3ACE5A009EE343 /* WebRequestTests.swift in Sources */,
-				D56150451C3AD69F009EE343 /* MockSessionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +418,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BB5021EC27A435020076C2BE /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BB5021ED27A435020076C2BE /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB5021EC27A435020076C2BE /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D56150181C3ACE5A009EE343 /* Project object */;
 }
