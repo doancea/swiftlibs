@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BB5021EA27A434A10076C2BE /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5021E827A434A10076C2BE /* Mockable.swift */; };
-		BB5021EB27A434A10076C2BE /* MockMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5021E927A434A10076C2BE /* MockMatchers.swift */; };
+		BB5021EB27A434A10076C2BE /* NimbleMatchers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5021E927A434A10076C2BE /* NimbleMatchers.swift */; };
 		BB5021EE27A435020076C2BE /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = BB5021ED27A435020076C2BE /* Nimble */; };
 		D56150251C3ACE5A009EE343 /* WiseMock.h in Headers */ = {isa = PBXBuildFile; fileRef = D56150241C3ACE5A009EE343 /* WiseMock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D561502C1C3ACE5A009EE343 /* WiseMockFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56150211C3ACE5A009EE343 /* WiseMockFramework.framework */; };
@@ -27,7 +27,7 @@
 
 /* Begin PBXFileReference section */
 		BB5021E827A434A10076C2BE /* Mockable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mockable.swift; sourceTree = "<group>"; };
-		BB5021E927A434A10076C2BE /* MockMatchers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockMatchers.swift; sourceTree = "<group>"; };
+		BB5021E927A434A10076C2BE /* NimbleMatchers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NimbleMatchers.swift; sourceTree = "<group>"; };
 		D56150211C3ACE5A009EE343 /* WiseMockFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WiseMockFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56150241C3ACE5A009EE343 /* WiseMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WiseMock.h; sourceTree = "<group>"; };
 		D56150261C3ACE5A009EE343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				BB5021E827A434A10076C2BE /* Mockable.swift */,
-				BB5021E927A434A10076C2BE /* MockMatchers.swift */,
+				BB5021E927A434A10076C2BE /* NimbleMatchers.swift */,
 				D56150471C3AD89D009EE343 /* Mocker.swift */,
 				D56150241C3ACE5A009EE343 /* WiseMock.h */,
 				D56150261C3ACE5A009EE343 /* Info.plist */,
@@ -201,7 +201,7 @@
 			files = (
 				BB5021EA27A434A10076C2BE /* Mockable.swift in Sources */,
 				D56150481C3AD89D009EE343 /* Mocker.swift in Sources */,
-				BB5021EB27A434A10076C2BE /* MockMatchers.swift in Sources */,
+				BB5021EB27A434A10076C2BE /* NimbleMatchers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
