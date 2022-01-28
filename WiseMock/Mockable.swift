@@ -1,41 +1,43 @@
 import Foundation
 
 public protocol Mockable {
+    associatedtype MockedMethod: RawRepresentable where MockedMethod.RawValue == String
+    
     var mocker: Mocker { get set }
 
-    func record(invocation: String, with parameters: Any?...)
-    func invocationCount(for name: String) -> Int
-    func parameters(for name: String, at index: Int) -> [Any]
-    func parameter<T>(for name: String, at index: Int, andInvocation invocation: Int) -> T?
-    func setReturnValue(for name: String, with value: Any?, index: Int)
-    func returnValue<T>(for name: String) -> T?
+    func record(invocation: MockedMethod, with parameters: Any?...)
+    func invocationCount(for name: MockedMethod) -> Int
+    func parameters(for name: MockedMethod, at index: Int) -> [Any]
+    func parameter<T>(for name: MockedMethod, at index: Int, andInvocation invocation: Int) -> T?
+    func setReturnValue(for name: MockedMethod, with value: Any?, index: Int)
+    func returnValue<T>(for name: MockedMethod) -> T?
     func reset()
 }
 
 public extension Mockable {
     
-    func record(invocation name: String, with parameters: Any?...) {
-        mocker.recordInvocation(name, paramList: parameters as [Any?])
+    func record(invocation name: MockedMethod, with parameters: Any?...) {
+        mocker.recordInvocation(name.rawValue, paramList: parameters as [Any?])
     }
 
-    func invocationCount(for name: String) -> Int {
-        return mocker.getInvocationCountFor(name)
+    func invocationCount(for name: MockedMethod) -> Int {
+        return mocker.getInvocationCountFor(name.rawValue)
     }
 
-    func parameters(for name: String, at index: Int = 0) -> [Any] {
-        return mocker.getParametersFor(name, n: index) ?? []
+    func parameters(for name: MockedMethod, at index: Int = 0) -> [Any] {
+        return mocker.getParametersFor(name.rawValue, n: index) ?? []
     }
 
-    func parameter<T>(for name: String, at index: Int, andInvocation invocation: Int = 0) -> T? {
+    func parameter<T>(for name: MockedMethod, at index: Int, andInvocation invocation: Int = 0) -> T? {
         return parameters(for: name, at: invocation).value(at: index) as? T
     }
 
-    func setReturnValue(for name: String, with value: Any?, index: Int = -1) {
-        mocker.setReturnValueFor(name, returnValue: value, n: index)
+    func setReturnValue(for name: MockedMethod, with value: Any?, index: Int = -1) {
+        mocker.setReturnValueFor(name.rawValue, returnValue: value, n: index)
     }
 
-    func returnValue<T>(for name: String) -> T? {
-        return mocker.getReturnValueFor(name) as? T
+    func returnValue<T>(for name: MockedMethod) -> T? {
+        return mocker.getReturnValueFor(name.rawValue) as? T
     }
 
     func reset() {
