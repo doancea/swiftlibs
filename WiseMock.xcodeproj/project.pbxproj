@@ -411,7 +411,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = PillarTechnology.SwiftLibsTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wisersolutions.wisemock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -425,7 +425,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = PillarTechnology.SwiftLibsTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wisersolutions.wisemock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
