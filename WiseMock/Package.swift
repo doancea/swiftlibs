@@ -25,9 +25,7 @@ let package = Package(
             dependencies: [
                 .product(name: "Nimble", package: "Nimble",
                                          condition: .when(platforms: [.macOS, .iOS])),
-            ]),
-        .testTarget(
-            name: "WiseMockTests",
-            dependencies: ["WiseMock"]),
+            ],
+        )
     ]
 )
