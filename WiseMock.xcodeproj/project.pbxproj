@@ -64,9 +64,7 @@
 		BB5021FB27A482140076C2BE /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				BB5021E827A434A10076C2BE /* Mockable.swift */,
-				BB5021E927A434A10076C2BE /* NimbleMatchers.swift */,
-				D56150471C3AD89D009EE343 /* Mocker.swift */,
+				D56150231C3ACE5A009EE343 /* WiseMock */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -74,7 +72,9 @@
 		D56150171C3ACE5A009EE343 = {
 			isa = PBXGroup;
 			children = (
-				D56150231C3ACE5A009EE343 /* WiseMock */,
+				BB5021F627A481EB0076C2BE /* Package.swift */,
+				BB5021FB27A482140076C2BE /* Sources */,
+				BB5021F527A481EB0076C2BE /* Tests */,
 				D56150221C3ACE5A009EE343 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,10 +91,10 @@
 		D56150231C3ACE5A009EE343 /* WiseMock */ = {
 			isa = PBXGroup;
 			children = (
-				BB5021FB27A482140076C2BE /* Sources */,
-				BB5021F627A481EB0076C2BE /* Package.swift */,
+				BB5021E827A434A10076C2BE /* Mockable.swift */,
+				BB5021E927A434A10076C2BE /* NimbleMatchers.swift */,
+				D56150471C3AD89D009EE343 /* Mocker.swift */,
 				BB5021F727A481EB0076C2BE /* README.md */,
-				BB5021F527A481EB0076C2BE /* Tests */,
 				D56150241C3ACE5A009EE343 /* WiseMock.h */,
 				D56150261C3ACE5A009EE343 /* Info.plist */,
 			);
