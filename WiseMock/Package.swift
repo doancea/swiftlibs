@@ -25,7 +25,7 @@ let package = Package(
             dependencies: [
                 .product(name: "Nimble", package: "Nimble",
                                          condition: .when(platforms: [.macOS, .iOS])),
-            ],
+            ]
         )
     ]
 )
