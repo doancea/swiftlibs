@@ -14,7 +14,7 @@
 		BB5021F927A481EB0076C2BE /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5021F627A481EB0076C2BE /* Package.swift */; };
 		BB5021FA27A481EB0076C2BE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BB5021F727A481EB0076C2BE /* README.md */; };
 		D56150251C3ACE5A009EE343 /* WiseMock.h in Headers */ = {isa = PBXBuildFile; fileRef = D56150241C3ACE5A009EE343 /* WiseMock.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D561502C1C3ACE5A009EE343 /* WiseMockFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56150211C3ACE5A009EE343 /* WiseMockFramework.framework */; };
+		D561502C1C3ACE5A009EE343 /* WiseMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56150211C3ACE5A009EE343 /* WiseMock.framework */; };
 		D56150481C3AD89D009EE343 /* Mocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56150471C3AD89D009EE343 /* Mocker.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +34,7 @@
 		BB5021F527A481EB0076C2BE /* Tests */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tests; sourceTree = "<group>"; };
 		BB5021F627A481EB0076C2BE /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		BB5021F727A481EB0076C2BE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D56150211C3ACE5A009EE343 /* WiseMockFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WiseMockFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D56150211C3ACE5A009EE343 /* WiseMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WiseMock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56150241C3ACE5A009EE343 /* WiseMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WiseMock.h; sourceTree = "<group>"; };
 		D56150261C3ACE5A009EE343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D561502B1C3ACE5A009EE343 /* WiseMockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiseMockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D561502C1C3ACE5A009EE343 /* WiseMockFramework.framework in Frameworks */,
+				D561502C1C3ACE5A009EE343 /* WiseMock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 		D56150221C3ACE5A009EE343 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D56150211C3ACE5A009EE343 /* WiseMockFramework.framework */,
+				D56150211C3ACE5A009EE343 /* WiseMock.framework */,
 				D561502B1C3ACE5A009EE343 /* WiseMockTests.xctest */,
 			);
 			name = Products;
@@ -115,9 +115,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D56150201C3ACE5A009EE343 /* WiseMockFramework */ = {
+		D56150201C3ACE5A009EE343 /* WiseMock */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D56150351C3ACE5A009EE343 /* Build configuration list for PBXNativeTarget "WiseMockFramework" */;
+			buildConfigurationList = D56150351C3ACE5A009EE343 /* Build configuration list for PBXNativeTarget "WiseMock" */;
 			buildPhases = (
 				D561501C1C3ACE5A009EE343 /* Sources */,
 				D561501D1C3ACE5A009EE343 /* Frameworks */,
@@ -128,12 +128,12 @@
 			);
 			dependencies = (
 			);
-			name = WiseMockFramework;
+			name = WiseMock;
 			packageProductDependencies = (
 				BB5021ED27A435020076C2BE /* Nimble */,
 			);
 			productName = SwiftLibs;
-			productReference = D56150211C3ACE5A009EE343 /* WiseMockFramework.framework */;
+			productReference = D56150211C3ACE5A009EE343 /* WiseMock.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D561502A1C3ACE5A009EE343 /* WiseMockTests */ = {
@@ -188,7 +188,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D56150201C3ACE5A009EE343 /* WiseMockFramework */,
+				D56150201C3ACE5A009EE343 /* WiseMock */,
 				D561502A1C3ACE5A009EE343 /* WiseMockTests */,
 			);
 		};
@@ -237,7 +237,7 @@
 /* Begin PBXTargetDependency section */
 		D561502E1C3ACE5A009EE343 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D56150201C3ACE5A009EE343 /* WiseMockFramework */;
+			target = D56150201C3ACE5A009EE343 /* WiseMock */;
 			targetProxy = D561502D1C3ACE5A009EE343 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -442,7 +442,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D56150351C3ACE5A009EE343 /* Build configuration list for PBXNativeTarget "WiseMockFramework" */ = {
+		D56150351C3ACE5A009EE343 /* Build configuration list for PBXNativeTarget "WiseMock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D56150361C3ACE5A009EE343 /* Debug */,
