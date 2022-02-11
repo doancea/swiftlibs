@@ -28,7 +28,7 @@ public extension Mockable {
         return mocker.getParametersFor(name.rawValue, n: index) ?? []
     }
 
-    func parameter<T>(for name: MockedMethod, at index: Int, andInvocation invocation: Int = 0) -> T? {
+    func parameter<T>(for name: MockedMethod, at index: Int = 0, andInvocation invocation: Int = 0) -> T? {
         return parameters(for: name, at: invocation).value(at: index) as? T
     }
 
