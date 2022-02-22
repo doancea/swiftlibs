@@ -14,6 +14,6 @@ public func whenever<T: Mockable, Value>(_ mock: T, _ name: T.MockedMethod, then
     mock.setReturnValue(for: name, with: value, index: index)
 }
 
-public func reset(_ mock: Mockable) {
+public func reset<T: Mockable>(_ mock: T) {
     mock.reset()
 }
