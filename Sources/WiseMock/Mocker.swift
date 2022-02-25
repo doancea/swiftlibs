@@ -1,4 +1,5 @@
-import UIKit
+import Foundation
+
 protocol iMocker {
     associatedtype MethodName_t = String
     associatedtype ParamList_t = Array<Any>
