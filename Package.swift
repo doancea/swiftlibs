@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "WiseMock",
+    name: "wiser-ios-utils",
     platforms: [
           .macOS(.v10_10), .iOS(.v12)
         ],
@@ -12,7 +12,12 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "WiseMock",
-            targets: ["WiseMock"]),
+            targets: ["WiseMock"]
+        ),
+        .library(
+            name: "DIWise",
+            targets: ["DIWise"]
+        ),
     ],
     dependencies: [
         .package(url: "https://github.com/Quick/Nimble.git", from: "9.2.1"),
@@ -26,6 +31,10 @@ let package = Package(
                 .product(name: "Nimble", package: "Nimble",
                                          condition: .when(platforms: [.macOS, .iOS])),
             ]
+        ),
+        .target(
+            name: "DIWise"
         )
+        
     ]
 )
