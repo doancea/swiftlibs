@@ -21,6 +21,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/Quick/Nimble.git", from: "9.2.1"),
+        .package(url: "https://github.com/Quick/Quick.git", from: "5.0.1"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -31,6 +32,10 @@ let package = Package(
                 .product(name: "Nimble", package: "Nimble",
                                          condition: .when(platforms: [.macOS, .iOS])),
             ]
+        ),
+        .testTarget(
+            name: "WiseMockTests",
+            dependencies: [ "Quick", "Nimble", "WiseMock" ]
         ),
         .target(
             name: "DIWise"
