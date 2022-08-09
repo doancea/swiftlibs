@@ -6,12 +6,9 @@
 //
 
 import Foundation
-import Segment
-import UIKit
-import CoreLocation
 
 @objcMembers
-public open class DIConfigurator: NSObject {
+public class DIConfigurator: NSObject {
     
     private static let container: DIContainerProtocol = DIContainer.shared
     
